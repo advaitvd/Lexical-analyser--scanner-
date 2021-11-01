@@ -5,7 +5,7 @@ translate it into an equivalent program in another language(typically machine co
 
 Source Program ====> COMPILER ====> Machine level program
 
-The following are the phases of a compilation:
+The following are the phases of compilation:
 
         Source Program
               |
@@ -27,13 +27,13 @@ The following are the phases of a compilation:
 - The main focus of this project is on the first phase in which the scanner scans the
 source program, performs a lexical analysis and generates tokens to be used in further
 stages.
-- The Scanner begins the analysis of the source program by readin the input text 
+- The Scanner begins the analysis of the source program by reading the input text 
 character by character and grouping individual characters into tokens such as
   - identifiers
   - literal values
   - reserved keywords
   - operators, etc.
-- It puts the program into a compact and unifrom format (a stream of tokens)
+- It puts the program into a compact and uniform format (a stream of tokens)
 - It eliminates redundant information such as comments.
 - The output token is of the form
   <token-name, attribute-value>
@@ -43,7 +43,7 @@ language. It has the following features:
   - IDENTIFIER: token shall begin with a letter and be followed by upto 30 letters and numbers and
   are case sensitive.
   - INTLITERAL: integer numbers. eg. 0, 2, 109
-  - FLOATLITERAL: floating point number available in two different format: yyy.xxx or .xxx
+  - FLOATLITERAL: floating point number available in two different format: xxx.xxx or .xxx
   - STRINGLITERAL (Max 80 characters including '\0')
   - COMMENTS: starts with '--' and lasts till the end of line.
   - keywords:
